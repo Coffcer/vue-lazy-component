@@ -5,7 +5,7 @@
   "main": "./src/index.vue",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --config ./build/dev.js --port 8080",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/prod.js",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/prod.js && npm run build:demo",
     "build:demo": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/dev.js"
   },
   "dependencies": {
