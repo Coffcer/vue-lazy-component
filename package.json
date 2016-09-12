@@ -2,7 +2,8 @@
   "name": "vue-lazy-component",
   "description": "Vue directive for lazy load components or elements",
   "author": "coffcer",
-  "main": "./src/index.vue",
+  "version": "0.1.1",
+  "main": "./dist/vue-lazy-component.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --config ./build/dev.js --port 8080",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./build/prod.js && npm run build:demo",
