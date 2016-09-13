@@ -3,7 +3,7 @@ var config = require('./base');
 var webpack = require('webpack')
 
 module.exports = Object.assign({}, config, {
-    entry: './src/index.vue',
+    entry: './src/vue-lazy-component.js',
     output: {
       path: path.resolve(__dirname, '../dist'),
       filename: 'vue-lazy-component.js',

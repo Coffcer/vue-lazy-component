@@ -1,9 +1,8 @@
 var path = require('path')
-var webpack = require('webpack')
 
 module.exports = {
   resolveLoader: {
-    root: path.join(__dirname, '../node_modules'),
+    root: path.join(__dirname, '../node_modules')
   },
   resolve: {
     extensions: ['', '.js', '.vue']
