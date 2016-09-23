@@ -42,7 +42,7 @@ export default function install (Vue, options = {}) {
                 this.factory = new FragmentFactory(this.vm, this.el);
             }
             this.frag = this.factory.create(this._host, this._scope, this._frag);
-            this.frag.before(this.anchor);
+            this.frag.before(this.anchor, !this.modifiers['no-animation']); //multiBefore(target, withTransition)
         },
         // update v-ref
         updateRef () {
